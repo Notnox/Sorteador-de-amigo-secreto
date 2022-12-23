@@ -1,9 +1,12 @@
 
 .participantes {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 5px;
-    margin-top: 20px;
+    width: 200px;
+    top: 600px;
+    margin: auto;
     &__label {
         font-family: 'Poppins';
         font-style: normal;
