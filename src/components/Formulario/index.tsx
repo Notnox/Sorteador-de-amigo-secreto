@@ -1,13 +1,10 @@
 import styles from './Formulario.module.scss';
-import { AiOutlineUserAdd, AiOutlinePlayCircle } from 'react-icons/ai'
+import { AiOutlineUserAdd } from 'react-icons/ai'
 import {ReactComponent as Logo} from '../../assets/img/logo.svg';
 import {ReactComponent as Menina} from '../../assets/img/menina.svg';
-import {ReactComponent as Sacola} from '../../assets/img/sacolas.svg';
 import { useRef, useState } from 'react';
 import { useAdicionarParticipante } from '../../state/hooks/useAdicionaParticipante';
 import { useMensagemDeErro } from '../../state/hooks/useMensagemDeErro';
-import ListaDeParticipantes from '../ListaDeParticipantes';
-import { IParticipante } from '../../interfaces/IParticipante';
 
 const Formulario: React.FC = () => {
     const [nome, setNome] = useState<string>('');
@@ -56,16 +53,6 @@ const Formulario: React.FC = () => {
                             >
                             Adicionar
                         </button>
-                    </div>
-                    <ListaDeParticipantes />
-                    <div className={styles.form__iniciar}>
-                        <button type='button' className={styles.form__iniciar__botao}>
-                            <AiOutlinePlayCircle size={40}/>
-                            <label className={styles.form__iniciar__label}>
-                                Iniciar brincadeira
-                            </label>
-                        </button>
-                        <Sacola />
                     </div>
                 </form>
             </div>
