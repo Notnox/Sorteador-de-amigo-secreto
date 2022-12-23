@@ -17,6 +17,9 @@ const Sorteio: React.FC = () => {
         evento.preventDefault();
         if (resultado.has(participanteDavez)) {
             setAmigoSecreto(resultado.get(participanteDavez)!);
+            setTimeout(() => {
+                setAmigoSecreto('');
+            }, 5000)
         }
     }
 
@@ -36,7 +39,8 @@ const Sorteio: React.FC = () => {
                         placeholder="Selecione o seu nome"
                         value={participanteDavez}
                         onChange={evento => setParticipanteDavez(evento.target.value)}
-                        >
+                    >
+                        <option>Selecione seu nome</option>
                         {listaDeParticipantes?.map(participante => 
                             <option key={participante.nome}>
                                 {participante.nome}
