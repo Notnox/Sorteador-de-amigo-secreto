@@ -1,0 +1,26 @@
+.paper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    border: 3px solid black;
+    
+    &__logo {
+        position: absolute;
+        right: 1000px;
+        top: 109px
+    }
+    &__menina {
+        position: absolute;
+        right: 480px;
+        top: 109px
+    }
+    &__form {
+        position: absolute;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 350px;
+        border: 2px solid #000000;
+        border-radius: 128px 128px 0px 0px;
+    }
+}
