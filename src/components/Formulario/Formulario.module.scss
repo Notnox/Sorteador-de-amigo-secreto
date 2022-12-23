@@ -61,6 +61,16 @@
             align-items: center;
             padding: 35px;
             justify-content: space-between;
+            &__error {
+                position: absolute;
+                top: 470px;
+                left: 650px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: red;
+            }
         }
         &__input {
             width: 356px;
@@ -90,21 +100,6 @@
             cursor: pointer;
         }
     }
-    &__participantes {
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        margin-top: 20px;
-        &__label {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #444444;
-            mix-blend-mode: normal;
-        }
-    } 
     &__iniciar {
         display: flex;
         flex-direction: row;
