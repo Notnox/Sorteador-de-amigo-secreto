@@ -3,12 +3,15 @@ import { AiOutlinePlayCircle } from 'react-icons/ai'
 import styles from './RodaPe.module.scss';
 import { useListaDeParticipantes } from '../../state/hooks/useListaDeParticipantes';
 import { useNavigate } from 'react-router-dom';
+import { useSorteador } from '../../state/hooks/useSorteador';
 
 const RodaPe = () => {
     const participantes = useListaDeParticipantes();
     const navigatePara = useNavigate();
+    const sortear = useSorteador();
 
     const iniciar = () => {
+        sortear();
         navigatePara('/sorteio');
     }
     return (
